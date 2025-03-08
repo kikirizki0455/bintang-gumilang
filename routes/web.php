@@ -41,6 +41,10 @@ Route::get('/testimonial', function () {
     return view('testimonial.testimonials');
 })->name('testimonial');
 
+
+
+// bigcode
+
 Route::get('/big-code', function () {
     return view('bigcode.bigcode');
 })->name('bigcode');
@@ -48,6 +52,22 @@ Route::get('/big-code', function () {
 Route::get('/testimonial', function () {
     return view('testimonial.testimonials');
 })->name('testimonial');
+
+Route::get('/about', function () {
+    return view('bigcode.pages.about');
+})->name('about');
+
+Route::get('/services', function () {
+    return view('bigcode.pages.services');
+})->name('services');
+
+Route::get('/portofolio', function () {
+    return view('bigcode.pages.portfolio');
+})->name('portofolio');
+
+Route::get('/our-team', function () {
+    return view('bigcode.pages.team');
+})->name('our-team');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

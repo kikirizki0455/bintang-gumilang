@@ -8,9 +8,10 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="font-sans antialiased">
+<body class="font-sans antialiased bigcode-page">
     <div class="min-h-screen bg-gray-900">
         @include('bigcode.partials.navbar')
+        @include('bigcode.partials.header-bigcode')
 
         <main>
             @yield('content')

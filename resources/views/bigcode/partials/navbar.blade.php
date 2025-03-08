@@ -10,16 +10,16 @@
 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:ml-10 md:flex md:space-x-8">
-                    <x-nav-link href="" class="text-gray-300 hover:text-blue-400">
+                    <x-nav-link href="{{ route('about') }}" class="text-gray-300 hover:text-blue-400">
                         About Us
                     </x-nav-link>
-                    <x-nav-link href="" class="text-gray-300 hover:text-blue-400">
+                    <x-nav-link href="{{ route('services') }}" class="text-gray-300 hover:text-blue-400">
                         Services
                     </x-nav-link>
-                    <x-nav-link href="" class="text-gray-300 hover:text-blue-400">
+                    <x-nav-link href="{{ route('portofolio') }}" class="text-gray-300 hover:text-blue-400">
                         Portfolio
                     </x-nav-link>
-                    <x-nav-link href="" class="text-gray-300 hover:text-blue-400">
+                    <x-nav-link href="{{ route('our-team') }}" class="text-gray-300 hover:text-blue-400">
                         Our Team
                     </x-nav-link>
                     <x-nav-link href="" class="text-gray-300 hover:text-blue-400">
@@ -56,16 +56,19 @@
     <!-- Mobile menu -->
     <div x-show="open" class="md:hidden bg-gray-800">
         <div class="px-2 pt-2 pb-3 space-y-1">
-            <x-responsive-nav-link href="" class="block px-3 py-2 text-gray-300 hover:bg-gray-700">
+            <x-responsive-nav-link href="{{ route('about') }}" class="block px-3 py-2 text-gray-300 hover:bg-gray-700">
                 About Us
             </x-responsive-nav-link>
-            <x-responsive-nav-link href="" class="block px-3 py-2 text-gray-300 hover:bg-gray-700">
+            <x-responsive-nav-link href="{{ route('services') }}"
+                class="block px-3 py-2 text-gray-300 hover:bg-gray-700">
                 Services
             </x-responsive-nav-link>
-            <x-responsive-nav-link href="" class="block px-3 py-2 text-gray-300 hover:bg-gray-700">
+            <x-responsive-nav-link href="{{ route('portofolio') }}"
+                class="block px-3 py-2 text-gray-300 hover:bg-gray-700">
                 Portfolio
             </x-responsive-nav-link>
-            <x-responsive-nav-link href="" class="block px-3 py-2 text-gray-300 hover:bg-gray-700">
+            <x-responsive-nav-link href="{{ route('our-team') }}"
+                class="block px-3 py-2 text-gray-300 hover:bg-gray-700">
                 Our Team
             </x-responsive-nav-link>
             <x-responsive-nav-link href="" class="block px-3 py-2 text-gray-300 hover:bg-gray-700">

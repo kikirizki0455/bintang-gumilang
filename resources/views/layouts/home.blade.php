@@ -24,7 +24,7 @@
 
 </head>
 
-<body class="antialiased">
+<body class="home-page antialiased">
     <div class="min-h-screen relative">
         <!-- Particles container for header -->
         <div id="header-particles" class="fixed inset-0 z-0"></div>
